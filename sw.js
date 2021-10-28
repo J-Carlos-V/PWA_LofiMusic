@@ -94,11 +94,11 @@ self.addEventListener('fetch', event => {
       
         const cacheAllowlist = [_cache];
       
-        event.waitUntil(
+        event.waitUntil(//funciona como un awakw
           caches.keys().then(cacheNames => {
-            return Promise.all(
-              cacheNames.map(cacheName => {
-                if (cacheAllowlist.indexOf(cacheName) === -1) {
+            return Promise.all(//promisetodas las promesas seran resultas 
+              cacheNames.map(cacheName => {// map con base a un arreglo comienza a extraer cada elemento de la lista
+                if (cacheAllowlist.indexOf(cacheName) === -1) {// si uno de los elementos de la vista  
                   return caches.delete(cacheName);
                 }
               })
