@@ -14,6 +14,10 @@ self.addEventListener('install', (event) => {
         'app.js',
         'img/musicicon.jpg',
         'img/showcase2.jpg',
+        'img/icon-192x192.png',
+        'img/icon-256x256.png',
+        'img/icon-384x384.png',
+        'img/icon-512x512.png',
     ];
 
     event.waitUntil(
@@ -47,12 +51,12 @@ self.addEventListener('activate', event => {
 
 
 //3 Cache First
-self.addEventListener('fetch', event => {
-    event.responseWith(caches.match(event.request).then((response) => {
-            return response || fetch(event.request);
-    })
-    );
-    });
+self.addEventListener('fetch', (e) =>{
+  e.respondWith(caches.match(e.request).then((r) => {
+    return r || fetch(e.request) 
+  })
+  );  
+}); 
 
 
 
