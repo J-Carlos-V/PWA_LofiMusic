@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Principal-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="description" content="Lo-Fi Music te brinda la mejor información de varias canciones Lofis haciendo uso de la API de Genius. Esto es un proyecto escolar.">
+    <meta name="keywords" content="Lofi-hip-hop, música, Lo-Fi Music, chillhop">
     <title>Lo-Fi Music</title>
+    <!--Android-->
+    <meta name=theme-color" content="e7e106">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-title" content="Lo-Fi Music">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="blacl-translucent">
+    <!-- UC Mobile Browser  -->
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
@@ -12,6 +26,23 @@
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="styles.css">
     <link rel="manifest" href="/manifest.json">
+    <!-- iOS  -->
+    <link rel="apple-touch-startup-image" href="img/icon-512x512.png">
+    <link href="img/icon-512x512.png" rel="apple-touch-icon">
+    <link href="img/icon-192x192.png" rel="apple-touch-icon" sizes="192x192">
+    <link href="img/icon-256x256.png" rel="apple-touch-icon" sizes="256x256">
+    <link href="img/icon-384x384.png" rel="apple-touch-icon" sizes="384x384">
+    <link href="img/icon-512x512.png" rel="apple-touch-icon" sizes="512x512">
+    <!-- iPhone Xs Max (1242px x 2688px) --> 
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" href="img/icon-512x512.png"><!-- iPhone Xr (828px x 1792px) --> 
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" href="img/icon-512x512.png"><!-- iPhone X, Xs (1125px x 2436px) --> 
+    <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" href="img/icon-512x512.png"><!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) --> 
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)" href="img/icon-512x512.png"><!-- iPhone 8, 7, 6s, 6 (750px x 1334px) --> 
+    <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="img/icon-512x512.png"><!-- iPad Pro 12.9" (2048px x 2732px) --> 
+    <link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" href="img/icon-512x512.png"><!-- iPad Pro 11” (1668px x 2388px) --> 
+    <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" href="img/icon-512x512.png"><!-- iPad Pro 10.5" (1668px x 2224px) --> 
+    <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" href="img/icon-512x512.png"><!-- iPad Mini, Air (1536px x 2048px) --> 
+    <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" href="img/icon-512x512.png">
 </head>
 <body>
 
@@ -21,7 +52,7 @@
     </div>
     <div class="container">
         <nav class="nav-main">
-            <img src="img/musicicon.jpg" alt="Lofi Music logo" class="nav-brand">
+            <img src="img/icon-512x512.png" alt="Lofi Music logo" class="nav-brand">
             <ul class="nav-menu">
                 <li>
                     <a href="#">Home</a>
@@ -36,9 +67,7 @@
             </ul>
             <ul class="nav-menu-right">
                 <li>
-                    <a href="#">
                         <i class="fas fa-search"></i>
-                    </a>
                 </li>
             </ul>
         </nav>

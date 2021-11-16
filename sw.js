@@ -25,7 +25,7 @@ self.addEventListener('install', (event) => {
     const _IMMUTABLE_FILES = [
       'https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap',
       'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css',
-    ]
+    ];
 
     const saveStaticCache = caches
     .open(staticCache)

@@ -60,7 +60,7 @@ function showSnackbarUpdate() {
         window.location.reload();
         window.location.reload();
         window.location.reload();
-        
+        console.log('recargando');
     }
 });
 
